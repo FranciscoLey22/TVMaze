@@ -1,5 +1,3 @@
-//starter code
-
 "use strict";
 //use jquery syntax to access/manipulate the DOM
 const $showsList = $("#shows-list");
@@ -35,7 +33,7 @@ async function getShowsByTerm(term) {
 	});
 }
 
-/** Given list of shows, create markup for each and to DOM */
+/** Given list of shows, create markup for each and add to DOM */
 
 function populateShows(shows) {
 	$showsList.empty();
@@ -106,9 +104,9 @@ async function getEpisodesOfShow(id) {
 	}));
 }
 
-/** Write a clear docstring for this function... */
 
-// function populateEpisodes(episodes) { }
+// Populating episodes for a selected show
+
 const $h2 = $("h2");
 function populateEpisodes(episodes) {
 	$episodesList.empty();
